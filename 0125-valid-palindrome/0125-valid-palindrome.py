@@ -1,3 +1,16 @@
+# It is a simple approach it can be solved using bruteforec 
+class Solution:
+    def isPalindrome(self,s: str) -> bool:
+        s=""
+        print(s.lower())
+        s=''.join(i for i in s if i.isalpha())
+        
+        return s==s[::-1]
+        
+        
+#next this is optimized two pointer approach 
+
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         
