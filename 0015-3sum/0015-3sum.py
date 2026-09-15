@@ -13,6 +13,9 @@
 
     #     return result
 
+
+# here in optimized approach ex[1,0,2,0,-1,-1,3,2,0,1 so here i jk three pointer are there where i is stable and j an dk works as left and right 
+#so i is from len(nums)-2 ,0 and j is from j=1 to len(nums)-1 and k is k=2 to len(nums)
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
