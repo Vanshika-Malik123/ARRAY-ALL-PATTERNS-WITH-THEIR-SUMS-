@@ -1,3 +1,17 @@
+Two pointer sum question method and useful things need to be learned .
+two pointer is used for optimization that is reducing complexity that is from O(n)^2 to O(n)
+here in two sum , there are two pointer initialize whihc is left or right 
+algorithm or pseudo code 
+step1 initialise left and right pointer
+step 2 apply for loop or while loop as you wish
+step 3 define the target variable 
+step 4 sum = numbers[left]+numbers [right]
+step 5 checking conditions like if numbers[left]==numbers[right] return left+=1. right+=1
+step 6 target> sum return left-=1
+step7 return right +=1
+
+
+
 <h2><a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted">167. Two Sum II - Input Array Is Sorted</a></h2><h3>Medium</h3><hr><p>Given a <strong>1-indexed</strong> array of integers <code>numbers</code> that is already <strong><em>sorted in non-decreasing order</em></strong>, find two numbers such that they add up to a specific <code>target</code> number. Let these two numbers be <code>numbers[index<sub>1</sub>]</code> and <code>numbers[index<sub>2</sub>]</code> where <code>1 &lt;= index<sub>1</sub> &lt; index<sub>2</sub> &lt;= numbers.length</code>.</p>
 
 <p>Return<em> the indices of the two numbers&nbsp;</em><code>index<sub>1</sub></code><em> and </em><code>index<sub>2</sub></code><em>, <strong>each incremented by one,</strong> as an integer array </em><code>[index<sub>1</sub>, index<sub>2</sub>]</code><em> of length 2.</em></p>
