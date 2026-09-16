@@ -85,8 +85,12 @@ class Solution:
 
             if area > max_area:
                 max_area = area
+# if height[left]>height[right]
+            #right+=1
+            
 
-            if height[left] < height[right]:
+            
+            if height[left] < height[right]:   
                 left += 1
             else:
                 right -= 1
