@@ -15,10 +15,17 @@ class Solution:
             right-=1
 
 # bruteforce approach but here the timecomplecity is O(n) and sapce complexity is also O(n)
-
+# inplace bruteforce
 # class Solution:
 #     def reverseString(self, s: List[str]) -> None:
 #         reversed_s = s[::-1]
 
 #         for i in range(len(s)):
 #             s[i] = reversed_s[i]
+
+#it will provide same result but it will not provide the in place it will make another list
+# s = ["h", "e", "l", "l", "o"]
+
+# reversed_s = s[::-1]
+
+# print(reversed_s)
