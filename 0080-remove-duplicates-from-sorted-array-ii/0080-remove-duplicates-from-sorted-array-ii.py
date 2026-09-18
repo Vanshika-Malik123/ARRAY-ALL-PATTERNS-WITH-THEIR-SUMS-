@@ -14,13 +14,32 @@
 # right is the pointer that scans every element.
 
 
+# class Solution:
+#     def removeDuplicates(self, nums: list[int]) -> int:
+#         left = 0
+
+#         for right in range(len(nums)):
+#             if left < 2 or nums[right] != nums[left - 2]:
+#                 nums[left] = nums[right]
+#                 left += 1
+
+#         return left
+
 class Solution:
-    def removeDuplicates(self, nums: list[int]) -> int:
-        left = 0
+    def removeDuplicates(self, nums: List[int]) -> int:
 
-        for right in range(len(nums)):
-            if left < 2 or nums[right] != nums[left - 2]:
-                nums[left] = nums[right]
-                left += 1
+        index = 1
+        occurance = 1
 
-        return left
+        for i in range(1, len(nums)):
+            if nums[i] == nums[i-1]:
+                occurance += 1
+            else:
+                occurance = 1
+
+            if occurance <= 2:
+                nums[index] = nums[i]
+                index += 1
+        
+        return index
+        
