@@ -7,22 +7,18 @@
 class Solution:
     def findDuplicate(self, nums: list[int]) -> int:
 
-        left = nums[0]
-        right = nums[0]
+        nums.sort()
 
-        # Find the meeting point
-        while True:
-            left = nums[left]          # moves 1 step
-            right = nums[nums[right]]  # moves 2 steps
+        left = 0
+        right = 1
 
-            if left == right:
-                break
+        while right < len(nums):
 
-        # Find the entrance of the cycle
-        left = nums[0]
+            # If two neighboring values are same,
+            # we found the duplicate.
+            if nums[left] == nums[right]:
+                return nums[left]
 
-        while left != right:
-            left = nums[left]
-            right = nums[right]
-
-        return left
+            # Move both pointers forward
+            left += 1
+            right += 1
