@@ -1,5 +1,7 @@
+# Bruteforce without two pointers could not passes few testcases
 # class Solution:
 #     def findDuplicate(self, nums: list[int]) -> int:
+#         nums.sort()
 #         for i in range(len(nums)):
 #             nums[i]==nums[i]
 #             nums.remove(nums[i])
