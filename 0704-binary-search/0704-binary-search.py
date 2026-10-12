@@ -1,3 +1,4 @@
+# this is basic binary search question which follow basic binary search template like if mid element eqals to target it return mid and if mid element smaller than see to right side and increase left and if mid element is larger than look at right side and subtract 
 class Solution:
     def search(self, nums: list[int], target: int) -> int:
         left=0
